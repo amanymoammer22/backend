@@ -40,19 +40,38 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // 4) CORS ( )
+// app.use(
+//     cors({
+//         origin: "http://localhost:5173",
+//         credentials: true,
+//     }),
+// );
+
+const allowedOrigins = [
+    "http://localhost:5173", // local
+    "https://your-frontend.com", // production
+];
+
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: (origin, callback) => {
+            if (!origin || allowedOrigins.includes(origin)) {
+                callback(null, true);
+            } else {
+                callback(new Error("Not allowed by CORS"));
+            }
+        },
         credentials: true,
     }),
 );
 
 
+
 // (اختياري) لو بدك تضمن الـ credentials بالهيدر
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Credentials", "true");
-    next();
-});
+// app.use((req, res, next) => {
+//     res.header("Access-Control-Allow-Credentials", "true");
+//     next();
+// });
 
 
 // 5) Mount Routes
