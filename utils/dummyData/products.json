@@ -1,0 +1,393 @@
+[
+    {
+        "id": "1",
+        "title": "Embroidered Wall Hanging",
+        "slug": "embroidered-wall-hanging",
+        "quantity": 10,
+        "price": 15,
+        "priceAfterDiscount": 10,
+        "description": "Wall hanging with embroidered map design in pink and green.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p1.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "2",
+        "title": "Traditional Embroidered Clutch",
+        "slug": "traditional-embroidered-clutch",
+        "quantity": 10,
+        "price": 20,
+        "priceAfterDiscount": 10,
+        "description": "Handmade colorful embroidered clutch, perfect for traditional outfits.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p2.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "3",
+        "title": "Traditional Phone Case",
+        "slug": "traditional-phone-case",
+        "quantity": 10,
+        "price": 130,
+        "priceAfterDiscount": 7,
+        "description": "Phone case with intricate traditional embroidery patterns.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p3.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "4",
+        "title": "Painted Ceramic Vase",
+        "slug": "painted-ceramic-vase",
+        "quantity": 10,
+        "price": 30,
+        "priceAfterDiscount": 20,
+        "description": "Beautiful ceramic vase with hand-painted traditional motifs.",
+        "category":"68ca0d1d99942cd61574fbcc",
+        "imageCover": "./Product/p4.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "5",
+        "title": "Ornamental Mirror",
+        "slug": "ornamental-mirror",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 30,
+        "description": "Mirror with carved frame featuring traditional motifs.",
+        "category": "68ca0d0f99942cd61574fbca",
+        "imageCover": "./Product/p5.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "6",
+        "title": "Patterned Plate",
+        "slug": "patterned-plate",
+        "quantity": 10,
+        "price": 20,
+        "priceAfterDiscount": 20,
+        "description": "Decorative plate with floral and bird designs.",
+        "category": "68ca0d1d99942cd61574fbcc",
+        "imageCover": "./Product/p6.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "7",
+        "title": "Decorative Plate",
+        "slug": "decorative-plate",
+        "quantity": 10,
+        "price": 35,
+        "priceAfterDiscount": 35,
+        "description": "Round decorative plate with intricate traditional patterns.",
+        "category":"68ca0d1d99942cd61574fbcc",
+        "imageCover": "./Product/p7.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "8",
+        "title": "Embroidered Handbag",
+        "slug": "embroidered-handbag",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 89.9,
+        "description": "Velvet handbag with detailed traditional embroidery.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p8.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "9",
+        "title": "Colorful Beaded Jewelry Holder",
+        "slug": "colorful-beaded-jewelry-holder",
+        "quantity": 10,
+        "price": 35,
+        "priceAfterDiscount": 30,
+        "description": "Wooden jewelry holder decorated with vibrant geometric beads.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p10.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "10",
+        "title": "Framed Traditional Artwork",
+        "slug": "framed-traditional-artwork",
+        "quantity": 10,
+        "price": 25,
+        "priceAfterDiscount": 20,
+        "description": "Square frame with colorful traditional design.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p11.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "11",
+        "title": "Beaded Keychains",
+        "slug": "beaded-keychains",
+        "quantity": 10,
+        "price": 7,
+        "priceAfterDiscount": 4.9,
+        "description": "Set of small keychains with colorful beadwork.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p12.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "12",
+        "title": "Decorative Mirror",
+        "slug": "decorative-mirror",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "Mirror framed with traditional embroidered patterns and tassels.",
+        "category": "68ca0d0f99942cd61574fbca",
+        "imageCover": "./Product/p13.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "13",
+        "title": "Ceramic Vase with Palestinian Tatreez Motifs",
+        "slug": "ceramic-vase-with-palestinian-tatreez-motifs",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A handcrafted ceramic vase decorated with patterns inspired by traditional Palestinian embroidery. A warm accent for living rooms or offices and a thoughtful heritage gift.",
+        "category": "68ca0d1d99942cd61574fbcc",
+        "imageCover": "./Product/p14.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "14",
+        "title": "Set of Embroidery Hoops – Floral Designs",
+        "slug": "set-of-embroidery-hoops-floral-designs",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "Wall-ready hoops featuring hand-stitched floral patterns in rich colors. Perfect for gallery walls, reading nooks, or a cozy craft corner.",
+        "category": "68ca0d1d99942cd61574fbcc",
+        "imageCover": "./Product/p15.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "15",
+        "title": "Embroidered Bag Set ",
+        "slug": "embroidered-bag-set-3-pieces",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A main handbag with two matching accessories, finished with geometric tatreez bands. Practical for travel and daily use while showcasing cultural style.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p16.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "16",
+        "title": "Embroidered Textile – Runner/Pillow Cover",
+        "slug": "embroidered-textile-runner-pillow-cover",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A soft textile piece stitched with classic Palestinian motifs—use as a small table runner or cushion cover to add warmth and texture.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p17.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "17",
+        "title": "Shoulder Bag with Red & Black Embroidery",
+        "slug": "shoulder-bag-with-red-and-black-embroidery",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A compact shoulder bag highlighted by bold geometric stitching in traditional colors. Just the right size for essentials with a heritage touch.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p18.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "18",
+        "title": "Mini Embroidered Keychains – Heritage Squares",
+        "slug": "mini-embroidered-keychains-heritage-squares",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A set of small, hand-embroidered keychains featuring classic square motifs. Great as thoughtful, everyday gifts for bags and keys.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p19.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "19",
+        "title": "Embroidered Hand Wallet – Geometric Panel",
+        "slug": "embroidered-hand-wallet-geometric-panel",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A slim hand wallet with a colorful embroidered front—ideal for bills, coins, and cards. Lightweight and easy to carry.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p20.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "20",
+        "title": "Tatreez Trim/Belt",
+        "slug": "tatreez-trim-belt",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A versatile embroidered band that can be used as a belt or as trim for clothing and bags. Warm tones and timeless patterns.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p21.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+    
+    {
+        "id": "21",
+        "title": "Small Tassel Handbag – Geometric Embroidery",
+        "slug": "small-tassel-handbag-geometric-embroidery",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A petite handbag with a side tassel and crisp geometric stitching. A stylish pick for light daily use or events.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p22.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "22",
+        "title": "Hand-Woven Frame – Watermelon Motif",
+        "slug": "hand-woven-frame-watermelon-motif",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A charming mini tapestry mounted in a wooden frame with a playful watermelon pattern. Sweet as desk décor or wall art.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p23.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "23",
+        "title": "Embroidered Zipper Pouch – Tissue/Accessory Case",
+        "slug": "embroidered-zipper-pouch-tissue-accessory-case",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A zip-top pouch finished with traditional embroidery. Works as a tissue cover, makeup bag, or organizer inside larger totes.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p24.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "24",
+        "title": "Set of Embroidered Coin Pouches (4pcs)",
+        "slug": "set-of-embroidered-coin-pouches-4pcs",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "Four coordinated mini pouches with colorful stitching—perfect for coins, earbuds, or small gifts.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p25.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "25",
+        "title": "Multi-Color Embroidered Cover",
+        "slug": "multi-color-embroidered-cover",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A richly stitched textile panel with interlaced patterns. Use as a small runner, placemat, or framed fabric art.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p26.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "26",
+        "title": "Business/Laptop Bag with Tatreez Panel",
+        "slug": "business-laptop-bag-with-tatreez-panel",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A durable work bag accented by a front embroidery strip. Fits a laptop and documents while adding an elegant cultural detail.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p27.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "27",
+        "title": "Keffiyeh Scarf with Floral Embroidered Edge",
+        "slug": "keffiyeh-scarf-with-floral-embroidered-edge",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "A classic keffiyeh enhanced with a colorful floral border. Blends tradition with a fresh, modern finish—great for gifting.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p28.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    },
+
+    {
+        "id": "28",
+        "title": "Red Embroidered Clutch",
+        "slug": "red-embroidered-clutch",
+        "quantity": 10,
+        "price": 40,
+        "priceAfterDiscount": 37,
+        "description": "An elegant clutch with rich red tatreez detailing—ideal for evenings and special occasions.",
+        "category": "68ca0d2c99942cd61574fbce",
+        "imageCover": "./Product/p29.jpg",
+        "ratingsAverage": 4.3,
+        "ratingsQuantity": 20
+    }
+]
