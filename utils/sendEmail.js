@@ -22,6 +22,8 @@ const sendEmail = async (options) => {
         subject: options.subject,
         text: options.message,
     };
+    console.log("✅ Email sent: ", info.messageId);
+    console.log("📩 Preview URL: ", nodemailer.getTestMessageUrl(info));
 
     // 3) Send email
     await transporter.sendMail(mailOpts);
