@@ -63,9 +63,7 @@ const multer = require("multer");
 const ApiError = require("../utils/apiError");
 const path = require("path");
 const fs = require("fs");
-const sharp = require("sharp");
-const { v4: uuidv4 } = require("uuid");
-const asyncHandler = require("express-async-handler");
+
 
 // تخزين في الميموري
 const multerStorage = multer.memoryStorage();
