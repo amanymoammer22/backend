@@ -29,7 +29,7 @@ dbConnection();
 const app = express();
 
 const allowedOrigins = [
-    "http://localhost:5173",
+    // "http://localhost:5173",
     "https://frontsoftw.netlify.app",
     /\.netlify\.app$/, 
 ];
@@ -58,6 +58,7 @@ app.use(
 );
 
 
+    
 // 3) Core middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -67,8 +68,6 @@ if (process.env.NODE_ENV === "development") {
     app.use(morgan("dev"));
     console.log(`mode: ${process.env.NODE_ENV}`);
 }
-
-
 
 // 5) Mount Routes
 app.use("/api/v1/categories", categoryRoute);
