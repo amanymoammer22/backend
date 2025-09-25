@@ -29,15 +29,7 @@ dbConnection();
 // 2) Create app
 const app = express();
 
-// 3) Core middlewares
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "uploads")));
 
-if (process.env.NODE_ENV === "development") {
-    app.use(morgan("dev"));
-    console.log(`mode: ${process.env.NODE_ENV}`);
-}
 
 // 4) CORS ( )
 // app.use(
@@ -49,7 +41,7 @@ if (process.env.NODE_ENV === "development") {
 
 const allowedOrigins = [
     "http://localhost:5173", // local
-    "https://your-frontend.com", // production
+    "https://my-frontend.vercel.app",
 ];
 
 app.use(
@@ -66,6 +58,15 @@ app.use(
 );
 
 
+// 3) Core middlewares
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "uploads")));
+
+if (process.env.NODE_ENV === "development") {
+    app.use(morgan("dev"));
+    console.log(`mode: ${process.env.NODE_ENV}`);
+}
 
 // (اختياري) لو بدك تضمن الـ credentials بالهيدر
 // app.use((req, res, next) => {
