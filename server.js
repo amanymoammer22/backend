@@ -19,7 +19,6 @@ const productRoute = require("./routes/productRoute");
 const cartRouter = require("./routes/cartRoute");
 const wishlistRoute = require("./routes/wishlistRoute");
 const adminRoute = require("./routes/adminRoute");
-// const contactRoutes = require("./routes/contactRoute");
 const subscriberRoute = require("./routes/subscriberRoute");
 
 
@@ -29,27 +28,28 @@ dbConnection();
 // 2) Create app
 const app = express();
 
-
-
-// 4) CORS ( )
-// app.use(
-//     cors({
-//         origin: "http://localhost:5173",
-//         credentials: true,
-//     }),
-// );
-
 const allowedOrigins = [
-    "http://localhost:5173", // local
-    "https://my-frontend.vercel.app",
+    "http://localhost:5173",
+    "https://frontsoftw.netlify.app",
+    /\.netlify\.app$/, 
 ];
 
 app.use(
     cors({
         origin: (origin, callback) => {
-            if (!origin || allowedOrigins.includes(origin)) {
+            
+            if (!origin) return callback(null, true);
+
+            const isAllowed = allowedOrigins.some((o) => {
+                if (typeof o === "string") return o === origin;
+                if (o instanceof RegExp) return o.test(origin);
+                return false;
+            });
+
+            if (isAllowed) {
                 callback(null, true);
             } else {
+                console.log("Blocked CORS request from:", origin);
                 callback(new Error("Not allowed by CORS"));
             }
         },
@@ -68,11 +68,6 @@ if (process.env.NODE_ENV === "development") {
     console.log(`mode: ${process.env.NODE_ENV}`);
 }
 
-// (اختياري) لو بدك تضمن الـ credentials بالهيدر
-// app.use((req, res, next) => {
-//     res.header("Access-Control-Allow-Credentials", "true");
-//     next();
-// });
 
 
 // 5) Mount Routes
@@ -83,7 +78,6 @@ app.use("/api/v1/products", productRoute);
 app.use("/api/v1/cart", cartRouter);
 app.use("/api/v1/wishlist", wishlistRoute);
 app.use("/api/v1/admin", adminRoute);
-// app.use("/api/v1/contact", contactRoutes);
 app.use("/api/v1/subscribe", subscriberRoute);
 
 // 6) 404 handler
@@ -92,7 +86,7 @@ app.use((req, res, next) => {
 });
 // 7) Global error handler
 app.use(globalError);
-app.use("/Product", express.static("uploads/Product"));
+// app.use("/uploads", express.static("uploads"));
 
 // 8) Start server (مرة واحدة فقط)
 const PORT = process.env.PORT || 5000;
