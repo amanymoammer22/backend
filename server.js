@@ -54,6 +54,9 @@ app.use(
     }),
 );
 
+// 5) Static: uploads (مع CORS)
+
+
 // 4) Core middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -64,9 +67,16 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // 5) Static: uploads (MUST come before SPA fallback)
-const UPLOADS_DIR = path.join(ROOT, "uploads");
-if (!fs.existsSync(UPLOADS_DIR)) fs.mkdirSync(UPLOADS_DIR, { recursive: true });
-app.use("/uploads", express.static(UPLOADS_DIR)); // sets proper content-type automatically
+// const UPLOADS_DIR = path.join(ROOT, "uploads");
+// if (!fs.existsSync(UPLOADS_DIR)) fs.mkdirSync(UPLOADS_DIR, { recursive: true });
+// app.use("/uploads", express.static(UPLOADS_DIR)); // sets proper content-type automatically
+
+const UPLOADS_DIR = path.join(__dirname, "uploads");
+
+// السماح للـ frontend على Netlify بالوصول للصور
+app.use("/uploads", cors({ origin: "https://frontsoftw.netlify.app", credentials: true }), express.static(UPLOADS_DIR));
+
+
 
 // 6) API Routes
 app.use("/api/v1/categories", categoryRoute);
