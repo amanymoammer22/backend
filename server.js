@@ -25,21 +25,14 @@ const subscriberRoute = require("./routes/subscriberRoute");
 // 1) Connect DB
 dbConnection();
 
-// 2) App
+// 2) Create app
 const app = express();
 
 // Detect ROOT correctly for exe/dev
 const ROOT = process.pkg ? path.dirname(process.execPath) : __dirname;
 
 // 3) CORS
-const allowedOrigins = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "http://localhost:5000",
-    "http://127.0.0.1:5000",
-    "https://frontsoftw.netlify.app",
-    /\.netlify\.app$/, 
-];
+const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:5000", "http://127.0.0.1:5000", "https://frontsoftw.netlify.app", /\.netlify\.app$/];
 
 app.use(
     cors({
@@ -54,9 +47,6 @@ app.use(
     }),
 );
 
-// 5) Static: uploads (مع CORS)
-
-
 // 4) Core middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -66,17 +56,10 @@ if (process.env.NODE_ENV === "development") {
     console.log(`mode: ${process.env.NODE_ENV}`);
 }
 
-// 5) Static: uploads (MUST come before SPA fallback)
-// const UPLOADS_DIR = path.join(ROOT, "uploads");
-// if (!fs.existsSync(UPLOADS_DIR)) fs.mkdirSync(UPLOADS_DIR, { recursive: true });
-// app.use("/uploads", express.static(UPLOADS_DIR)); // sets proper content-type automatically
-
-const UPLOADS_DIR = path.join(__dirname, "uploads");
-
-// السماح للـ frontend على Netlify بالوصول للصور
-app.use("/uploads", cors({ origin: "https://frontsoftw.netlify.app", credentials: true }), express.static(UPLOADS_DIR));
-
-
+// 5) Serve uploads folder with CORS
+const UPLOADS_DIR = path.join(ROOT, "uploads");
+if (!fs.existsSync(UPLOADS_DIR)) fs.mkdirSync(UPLOADS_DIR, { recursive: true });
+app.use("/uploads", cors({ origin: allowedOrigins, credentials: true }), express.static(UPLOADS_DIR));
 
 // 6) API Routes
 app.use("/api/v1/categories", categoryRoute);
@@ -86,13 +69,13 @@ app.use("/api/v1/products", productRoute);
 app.use("/api/v1/cart", cartRouter);
 app.use("/api/v1/wishlist", wishlistRoute);
 app.use("/api/v1/admin", adminRoute);
-app.use("/api/v1/Subscribe".toLowerCase(), subscriberRoute); // keep path stable
+app.use("/api/v1/subscribe", subscriberRoute);
 
 // 7) Serve FRONTEND build (if present)
 const STATIC_DIR = path.join(ROOT, "dist");
 if (fs.existsSync(STATIC_DIR)) {
     app.use(express.static(STATIC_DIR));
-    // SPA fallback, but exclude API and uploads
+    // SPA fallback (exclude API & uploads)
     app.get(/^\/(?!api\/|uploads\/).*/, (req, res) => {
         res.sendFile(path.join(STATIC_DIR, "index.html"));
     });
