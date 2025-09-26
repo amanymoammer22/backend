@@ -62,7 +62,9 @@ app.use(
 // 3) Core middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "uploads")));
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
+// app.use(express.static(path.join(__dirname, "uploads")));
 
 if (process.env.NODE_ENV === "development") {
     app.use(morgan("dev"));
